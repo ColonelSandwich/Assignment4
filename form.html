@@ -13,8 +13,8 @@
   <!--Header-->
   <header class="row">
     <div class="p-4 col-lg bg-dark text-white">
-      <h1>Welcome to the first page!</h1>
-      <p>Check out this nifty table and carousel, wow!!</p>
+      <h1>You made it to page two, congrats!</h1>
+      <p>Fill out this form (or else)</p>
     </div>
   </header>
   <!--Navigation Bar-->
@@ -26,68 +26,53 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Form</a>
+          <a class="nav-link" href="form.html">Form</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Bootstrap</a>
+          <a class="nav-link" href="http://www.burymewithmymoney.com/">Bury Me With My Money </a>
         </li>
       </ul>
     </div>
   </nav>
   <!--Main Page Content-->
   <main class="row">
-    <div class="col-lg bg-light">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Information</td>
-            <td>Information</td>
-          </tr>
-          <tr>
-            <td>Information</td>
-            <td>Information</td>
-          </tr>
-          <tr>
-            <td>Information</td>
-            <td>Information</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-lg bg-light">
-      <!-- Carousel -->
-      <div id="picCarousel" class="carousel slide" data-bs-ride="carousel">
-
-        <!--Picture Carousel-->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="img-fluid" src="Pictures/moai1.jpg" class="d-block" style="width:100%">
-          </div>
-          <div class="carousel-item">
-            <img class="img-fluid" src="Pictures/moai2.jpg" class="d-block" style="width:100%">
-          </div>
-          <div class="carousel-item">
-            <img class="img-fluid" src="Pictures/moai3.jpg" class="d-block" style="width:100%">
-          </div>
-        </div>
-
-        <!--Scroll Left/Right-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#picCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#picCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+    <!--Form-->
+    <div class="col-lg p-4 bg-light">
+      <form>
+      <!--Pick a food!-->
+      <p>What's your favorite food?</p>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="food1" name="food" value="option1" checked>Pizza
+        <label class="form-check-label" for="food1"></label>
       </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="food2" name="food" value="option2">Chicken Wings
+        <label class="form-check-label" for="food2"></label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="food2" name="food" value="option2">Burritos
+        <label class="form-check-label" for="food2"></label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="food2" name="food" value="option2">Fried Rice
+        <label class="form-check-label" for="food2"></label>
+      </div>
+      <!--Pick a color!-->
+        <label for="favcolor" class="form-label">What's your favorite color??</label>
+        <input type="color" class="form-control form-control-color" id="favcolor" value="#FF0000" title="Pick a color!">
+      <!--Enjoyment???-->
+       <label for="enjoy">Are you enjoying this form? You better be!</br>Write a review here:</label>
+<textarea class="form-control" rows="5" id="enjoy" name="review"></textarea></br>
+      <!--SUBMIT!!-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!--Display Content submitted-->
+    <div class="col-lg bg-light">
+
     </div>
   </main>
   <!--Footer-->
